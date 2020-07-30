@@ -3,6 +3,3 @@ kind: Kustomization
 bases:
   - base
   - flux
-patchesStrategicMerge:
-#  - overlays/podinfo.yaml
-#  - overlays/canary.yaml

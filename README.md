@@ -1,15 +1,15 @@
-# appmesh
+# KubeFlow-ML
 
 ## Setup repo
 This repo was setup using eksctl,
-[git@github.com:seizadi/eksctl.git repo](https://github.com/seizadi/eksctl),
-was used to create , see
-[it using Weaveworks eksctl](https://eks.handson.flagger.dev/profile/#create-a-github-repository).
-This is created using:
+[git@github.com:seizadi/kubeflow.git repo](https://github.com/seizadi/kubeflow),
+was used to create. The use of this Git repo was start with call to:
 ```bash
 make repo
-make mesh
 ```
+
+
+
 The project is a demo of Weaveworks partnership with AWS to deploy a Gitops native k8s deployment
 pipeline. The manifests in ./base/appmesh-system and ./base/kube-system and ./flux would be
 removed and will be part of cluster orchestration as the services deployed would be used by
