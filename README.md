@@ -31,4 +31,13 @@ whould be installed and you should be able to access it by:
 ```bash
 kubectl proxy
 ```
+Get token
+```bash
+kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | awk '/^kubernetes-dashboard-token-/{print $1}') | awk '$1=="token:"{print $2}'
+```
 Link: [Kubernetes Dashboard](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/)
+
+
+## Debug
+### EKS Dashboard Is Empty!
+It might be similar [problem on Azure AKS](https://github.com/Azure/AKS/issues/1573)?
