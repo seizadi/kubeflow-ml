@@ -10,5 +10,5 @@ roleRef:
   name: cluster-admin
 subjects:
   - kind: ServiceAccount
-      name: kubernetes-dashboard
-      namespace: kubernetes-dashboard
+    name: kubernetes-dashboard
+    namespace: kubernetes-dashboard
