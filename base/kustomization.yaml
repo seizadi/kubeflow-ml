@@ -5,3 +5,4 @@ resources:
 - kube-system/metrics-server-0-3-7.yaml
 - kube-system/eks-admin-service-account.yaml
 - kubernetes-dashboard/dashboard-2-0-3.yaml
+- kubernetes-dashboard/dashboard-admin.yaml

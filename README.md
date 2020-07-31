@@ -25,3 +25,10 @@ rather than wait for the poll cycle to apply:
 $ git push
 $ fluxctl sync --k8s-fwd-ns flux
 ```
+
+The [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
+whould be installed and you should be able to access it by:
+```bash
+kubectl proxy
+```
+Link: [Kubernetes Dashboard](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/)
