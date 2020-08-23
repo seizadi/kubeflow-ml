@@ -4,4 +4,8 @@ resources:
 
 - kube-system/metrics-server-0-3-7.yaml
 - kube-system/eks-admin-service-account.yaml
+- kube-system/aws-auth.yaml
 - kubernetes-dashboard/dashboard-2-0-3.yaml
+#- kubeflow-models/pytorch.yaml
+#- kubeflow-models/sklearn.yaml
+#- kubeflow-models/tensorflow.yaml

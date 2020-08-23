@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
+data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::405093580753:role/eksctl-dev-eks-kubeflow-nodegroup-NodeInstanceRole-1VVYK8L2TIA0T
+      username: system:node:{{EC2PrivateDNSName}}
+      groups:
+        - system:bootstrappers
+        - system:nodes
+  mapUsers: |
+    - userarn: arn:aws:iam::405093580753:user/arayan
+      username: admin
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::405093580753:user/folumofin
+      username: folumofin
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::405093580753:user/seizadi
+      username: seizadi
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::405093580753:user/dgarcia
+      username: dgarcia
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::405093580753:user/skamchiline
+      username: skamchiline
+      groups:
+        - system:masters
